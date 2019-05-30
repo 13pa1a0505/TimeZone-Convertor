@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link
+	href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen"
+	href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--Getting response from servlet and displaying in dropdown in JSON format -->
+<script type="text/javascript" src="index.js">
+	
+</script>
+</head>
+<body>
+	<h2 align="center">Time Converter</h2>
+	<form id="formCal">
+		<div class="container">
+
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th></th>
+						<th>From</th>
+						<th>To</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Select Time Zone</td>
+						<td><select id="inpDropdownlist"></select></td>
+						<td><select id="outDropdownlist"></select></td>
+					</tr>
+					<tr>
+						<td>Enter Date and Time</td>
+						<td>
+							<div id="textInp" class="input-append date">
+								<input id="inpDate" type="text" readonly></input> <span
+									class="add-on"> <i data-time-icon="icon-time"
+									data-date-icon="icon-calendar"></i>
+								</span>
+							</div>
+						</td>
+						<td><input type="text" id="outDate" name="outDate" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div align="center">
+			<button type="button" id="buttonSubmit">Submit</button>
+		</div>
+	</form>
+
+	<script type="text/javascript"
+		src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript"
+		src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+		
+	</script>
+	<script type="text/javascript"
+		src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+		
+	</script>
+	<script type="text/javascript"
+		src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+		
+	</script>
+	<script type="text/javascript">
+		$('#textInp').datetimepicker({
+			format : 'dd/MM/yyyy hh:mm:ss',
+		});
+	</script>
+
+</body>
+</html>
+
